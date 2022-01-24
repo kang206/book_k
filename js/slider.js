@@ -28,7 +28,6 @@ $(function(){
 		} else{
 		  $("#sliderup").css({"backgroundColor": "#fff"});
 		} 
-		
 	});
 
 // 좌/우 버튼 추가 슬라이더

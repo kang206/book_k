@@ -67,29 +67,11 @@ $(function(){
 	});
 
 	
-	
-	/*베스트 셀러*/
-	$('.w_lank').hide();
-	$('#day').mouseover(function(){
-		$('.w_lank').hide();
-		$('.d_lank').show();
-		$('#week').css({"border-bottom":"1px solid #b3b3b3"});
-		$('#day').css({"border-bottom":"none"});
-	});
-	$('#week').mouseover(function(){
-		$('.d_lank').hide();
-		$('.w_lank').show();
-		$('#day').css({"border-bottom":"1px solid #b3b3b3"});
-		$('#week').css({"border-bottom":"none"});
-	});
-	
-
-	
  	//검색창 완성글 없애기//
         $('input').focus(function () {
         	$('input').removeAttr('placeholder');
         }).blur(function () {
-        	$('input').attr('placeholder', "뒤에 올 여성들을 위해!");
+        	$('input').attr('placeholder', "");
         });
 	
 })

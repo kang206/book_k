@@ -3,7 +3,7 @@
 
 #slider {width:100%; height:auto;}
 #slider>#sliderup {width: 100%; height: 310px;} 
-#slider>#sliderup>#sl_wrap {width:100%; height:310px; margin:0 auto; display: flex;}
+#slider>#sliderup>#sl_wrap {width:100%; height:310px; margin:0 auto; display: flex; justify-content: center;} 
 
 /*왼쪽*/
 #sl_left {width:150px; height:360px; padding:1% 1%;display: flex; flex-direction: column; align-items:flex-end;}
@@ -76,6 +76,41 @@
 
 /*아래*/
 #slider>#slidedown {width:100%; height:50px; background-color:#f1f1f1;}
+
+
+#best {
+  display: flex;
+  justify-content: center;
+}
+
+#best .se_prev {left:0}
+#best .se_next {right:0}
+
+/*인터파크 추천*/
+#interrecommend {width:855px;height:300px;margin:40px 0 20px 0;border-top:1px solid #000;position: relative;}
+#interrecommend>#inter_title {position: absolute; top:-22px; left: 50%;transform: translateX(-50%); background-color: #fff; width: 200px; display: flex; justify-content: center}
+#interrecommend>#inter_title>span {font-size: 25px; line-height: 45px}
+#best .se_s4 {color: #f7695b;}
+#interrecommend>#inter_slide {width:770px; height: 275px; margin: 25px auto;overflow: hidden}
+#interrecommend>#inter_slide>.inter_list {width:2850px; height:275px;float:left}
+#interrecommend>#inter_slide>.inter_list>li {width:560px; height: 100%;display: flex; flex-flow: wrap column; justify-content: space-around; float:left; margin: 0 10px 0 0; cursor: pointer}
+#interrecommend>#inter_slide>.inter_list>li:hover h4{text-decoration: underline}
+#interrecommend>#inter_slide>.inter_list>li>.in_imgbox {width: 35%; height:92%; margin: 6px 18px 0 0; box-shadow: 5px 5px 10px #eee; position:relative}
+#interrecommend>#inter_slide>.inter_list>li>.in_imgbox>img {width:100%; height:100%}
+#interrecommend>#inter_slide>.inter_list>li>.in_imgbox>.clip{width:60px; height:50px; position:absolute; top:-12px; right:0}
+#interrecommend>#inter_slide>.inter_list>li>.in_imgbox>clip>img {width:100%; height:100%}
+#interrecommend>#inter_slide>.inter_list>li>.in_con1 {width: 60%; height:50%;}
+#interrecommend>#inter_slide>.inter_list>li>.in_con1>.star {width: 100px; display: inline-block}
+#interrecommend>#inter_slide>.inter_list>li>.in_con1>.star>img {width:100%; height: 100%}
+#interrecommend>#inter_slide>.inter_list>li>.in_con1>.star_s1 {font-size: 30px; font-weight: bold; color:#f7695b}
+#interrecommend>#inter_slide>.inter_list>li>.in_con1>h4 {margin: 5px 0 30px; font-size: 17px}
+#interrecommend>#inter_slide>.inter_list>li>.in_con1>h6 {font-size: 14px}
+#interrecommend>#inter_slide>.inter_list>li>.in_con2 {width: 60%; height:40%; background-color:#eee; padding: 1.5%}
+#interrecommend>#inter_slide>.inter_list>li>.in_con2>p {font-size: 13px; color: #666}
+#interrecommend>span {position: absolute; top:43.5%; transform: translateY(-50%); color:#ccc; font-size:35px; padding: 12% 1%; cursor: pointer}
+#interrecommend>span:hover {color:#f7695b; transition: all 0.5s}
+
+
 
 #trend {
     width: 100%;

@@ -1,7 +1,7 @@
 $.ajax({
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book?target=title",
-    data: { query:"블랙" },
+    data: { query:"자바스크립트" },
     headers:{Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161"}
   })
     .done(function( msg ) {
