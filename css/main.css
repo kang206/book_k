@@ -90,13 +90,13 @@ a {text-decoration: none; color:#666}
 #best .se_next {right:0}
 
 /*인터파크 추천*/
-#interrecommend {width:855px;height:300px;margin:40px 0 20px 0;border-top:1px solid #000;position: relative;}
+#interrecommend {width:1200px;height:300px;margin:40px 0 20px 0;border-top:1px solid #000;position: relative;}
 #interrecommend>#inter_title {position: absolute; top:-22px; left: 50%;transform: translateX(-50%); background-color: #fff; width: 200px; display: flex; justify-content: center}
 #interrecommend>#inter_title>span {font-size: 25px; line-height: 45px}
 #best .se_s4 {color: #f7695b;}
 #interrecommend>#inter_slide {width:770px; height: 275px; margin: 25px auto;overflow: hidden}
 #interrecommend>#inter_slide>.inter_list {width:2850px; height:275px;float:left}
-#interrecommend>#inter_slide>.inter_list>li {width:560px; height: 100%;display: flex; flex-flow: wrap column; justify-content: space-around; float:left; margin: 0 10px 0 0; cursor: pointer}
+#interrecommend>#inter_slide>.inter_list>li {width: 760px; height: 100%; display: flex; flex-flow: wrap column; justify-content: space-around; float:left; margin: 0 10px 0 0; cursor: pointer}
 #interrecommend>#inter_slide>.inter_list>li:hover h4{text-decoration: underline}
 #interrecommend>#inter_slide>.inter_list>li>.in_imgbox {width: 35%; height:92%; margin: 6px 18px 0 0; box-shadow: 5px 5px 10px #eee; position:relative}
 #interrecommend>#inter_slide>.inter_list>li>.in_imgbox>img {width:100%; height:100%}
@@ -118,8 +118,45 @@ a {text-decoration: none; color:#666}
 #trend {
     width: 100%;
     height: 600px;
-    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
 }
+
+#part {width:1200px; height:600px; margin:40px 0 20px; border-top:1px solid #000; position: relative;}
+#part>.part_title {background-color: #fff; position: absolute; left: 50%; transform: translateX(-50%); top:-25px; display: flex; justify-content: center;align-content: center; padding: 0 3%}
+#part>.part_title>span {font-size: 25px; line-height: 45px;}
+#trend .se_s4 {color: #f7695b;}
+
+#part>#pamenu {width:100%; height: 50px; border-bottom: 1px solid #ccc; margin: 40px 0 0;}
+#part>#pamenu>.partca {width:80%; height:100%;display: flex; align-items:center; justify-content: space-around; margin: 0 auto;}
+#part>#pamenu>.partca>li {border-bottom: 3px solid transparent; padding: 14px 27px; position: relative; font-weight: bold; letter-spacing: -1px; cursor: pointer} 
+#part>#pamenu>.partca>li i{position: absolute; bottom: -13px; left: 50%; transform: translateX(-50%); color:transparent;}
+#part>#pamenu>.partca>.on, #part>#pamenu>.partca>li:hover {color:#f7695b; transition: all 0.3s; border-bottom: 3px solid #f7695b}
+#part>#pamenu>.partca>.on i{color:#f7695b; transition: all 0.3s}
+#part>#pamenu>.partca>li:hover i{color:#f7695b; transition: all 0.3s}
+
+
+#part>#pacon {width:100%; height: 510px; position: relative}
+#part>#pacon>.pabooks {width: 100%; height:100%;}
+#part>#pacon>.pabooks>li {width: 100%; height:100%; display: none;}
+#part>#pacon>.pabooks>.on {display: block;}
+
+
+#part>#pacon>.pabooks>li>.booklist {width:92.5%; height:75%; margin:0 auto; padding: 3% 0;overflow: hidden;}
+#part>#pacon>.pabooks>li>.booklist>.rolling {width: 1750px; height: 100%; display: flex; flex-wrap: nowrap; align-items: center}
+#part>#pacon>.pabooks>li>.booklist>.rolling>li {width:140px; height:100%; margin: 0 35px 0 0; cursor: pointer; }
+#part>#pacon>.pabooks>li>.booklist>.rolling>li:hover h5{text-decoration: underline}
+#part>#pacon>.pabooks>li>.booklist>.rolling>li>h5 {margin: 30px 5px 15px; text-align: center; font-size: 13px}
+#part>#pacon>.pabooks>li>.booklist>.rolling>li>p {font-size: 15px; text-align: center;}
+#part>#pacon>.pabooks>li>.booklist>.rolling>li>h6 {font-size:13px; text-align: center;color:#f7695b}
+
+#part>#pacon>.pabooks>li>.booklist>.rolling>li>.paimg {width:140px; height: 65%; box-shadow: 5px 5px 10px #eee}
+#part>#pacon>.pabooks>li>.booklist>.rolling>li>.paimg>img{width:100%; height: 100%}
+
+
+#part>#pacon>.pabooks>li>.banners {width: 100%; height:25%; display: flex; align-items: center; justify-content: space-between; padding: 0 3.5%}
+#part>#pacon>.pabooks>li>.banners>.pabanner {width:500px; height: 80%; overflow: hidden}
+#part>#pacon>.pabooks>li>.banners>.pabanner>img {width:100%; height: 100%}
 
 footer {
     width: 100%;
