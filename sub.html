@@ -11,6 +11,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/sub_json.js"></script>
+	<script src="js/sub_buy.js"></script>
+	<script src="js/sub_buy_json.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -330,11 +332,101 @@
               </tr>  
           
             </table>  
-        </div>
+		</div>
+			<div id="kind">
+				<div class="setitle">
+					<h3>이 상품의 분류</h3>
+				</div>
+				<div class="kilist">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><i class="fas fa-angle-right"></i></li>
+						<li><a href="#">도서</a></li>
+						<li><i class="fas fa-angle-right"></i></li>
+						<li><a href="#">시/에세이</a></li>
+						<li><i class="fas fa-angle-right"></i></li>
+						<li><a href="#">에세이/산문</a></li>
+						<li><i class="fas fa-angle-right"></i></li>
+						<li><a href="#">한국에세이</a></li>
+					</ul>
+				</div>
+			</div>
             <div class="contextbox"></div>
             
             <div id="tmpBox"></div> 
+
+			<div id="recommend">
+				<div class="rebooks">
+					<div class="retitle">
+						<h5> 시/에세이 분야에서 많은 회원이 구매한 책</h5>
+					</div>
+					<div class="recon">
+						 <span id="buyprev" class="reprev"><i class="fas fa-chevron-left"></i></span>
+						 <ul class="buylist">
+							 <li class="buy"></li>
+							 <li class="buy"></li>
+							 <li class="buy"></li>
+							 <li class="buy"></li>
+							 <li class="buy"></li>
+							 <li class="buy"></li>
+							 <li class="buy"></li>
+							 <li class="buy"></li>
+							 <li class="buy"></li>
+							 <li class="buy"></li>
+						 </ul>
+						 <span id="buynext" class="renext"><i class="fas fa-chevron-right"></i></span>
+					</div>
+				</div>
+			</div>
+			<div id="look">
+				<div class="rebooks">
+					<div class="retitle">
+						<h5> 이 책을 조회한 회원들이 같이 본 책</h5>
+					</div>
+					<div class="recon">
+						 <span id="lookprev" class="reprev"><i class="fas fa-chevron-left"></i></span>
+						 <ul class="looklist">
+							 <li class="look"></li>
+							 <li class="look"></li>
+							 <li class="look"></li>
+							 <li class="look"></li>
+							 <li class="look"></li>
+							 <li class="look"></li>
+							 <li class="look"></li>
+							 <li class="look"></li>
+							 <li class="look"></li>
+							 <li class="look"></li>
+						 </ul>
+						 <span id="looknext" class="renext"><i class="fas fa-chevron-right"></i></span>
+					</div>
+				</div>
+			</div>
+			<div id="member">
+				<div class="rebooks">
+					<div class="retitle">
+						<h5>  이 책을 구매한 회원들이 구매한 책</h5>
+					</div>
+					<div class="recon">
+						 <span id="memberprev" class="reprev"><i class="fas fa-chevron-left"></i></span>
+						 <ul class="memberlist">
+							 <li class="member"></li>
+							 <li class="member"></li>
+							 <li class="member"></li>
+							 <li class="member"></li>
+							 <li class="member"></li>
+							 <li class="member"></li>
+							 <li class="member"></li>
+							 <li class="member"></li>
+							 <li class="member"></li>
+							 <li class="member"></li>
+						 </ul>
+						 <span id="membernext" class="renext"><i class="fas fa-chevron-right"></i></span>
+					</div>
+				</div>
+			</div>
         </div>
+
+		
             </section>
         <footer>
 			<div id="footer_box1">
